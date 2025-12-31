@@ -3,4 +3,3 @@
 * [ডিএসএ](/bn/dsa.md)
 * [সিস্টেম ডিজাইন](/bn/system-design.md)
 * [এআই এবং এমএল](/bn/ai-ml.md)
-* [গাইড](/bn/guide.md)

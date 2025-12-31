@@ -3,4 +3,3 @@
 * [DSA](dsa.md)
 * [System Design](system-design.md)
 * [AI & ML](ai-ml.md)
-* [Guide](guide.md)

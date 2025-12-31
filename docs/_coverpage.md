@@ -8,7 +8,7 @@
 - **System Design** 
 - **AI & Machine Learning** 
 
-[Get Started](#dsa-blog)
-[GitHub](https://github.com/)
+[Get Started](#notes)
+[GitHub](https://github.com/AnnNaserNabil)
 
-![](/_media/background.png)
+![](docs/_media/background.png)
