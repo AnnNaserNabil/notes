@@ -1,3 +1,7 @@
 * [বাংলা](/bn/)
 * [English](/)
+* [পাইথন](/bn/python.md)
+* [ডিএসএ](/bn/dsa.md)
+* [সিস্টেম ডিজাইন](/bn/system-design.md)
+* [এআই এবং এমএল](/bn/ai-ml.md)
 * [GitHub](https://github.com/)
