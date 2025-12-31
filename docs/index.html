@@ -145,18 +145,22 @@
       }
     }
 
-    section.cover h1 {
+    section.cover h1,
+    section.cover h1 a,
+    section.cover h1 span {
       font-family: 'Outfit', sans-serif !important;
-      background: linear-gradient(to right, #60a5fa, #a78bfa);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background: linear-gradient(to right, #60a5fa, #a78bfa) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      color: transparent !important;
       font-weight: 900;
       font-size: 6rem !important;
       letter-spacing: -0.05em;
       margin-bottom: 1rem;
       filter: drop-shadow(0 0 30px rgba(96, 165, 250, 0.5));
       text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      text-decoration: none !important;
     }
 
     section.cover h2 {
