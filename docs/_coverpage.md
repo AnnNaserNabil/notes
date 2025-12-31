@@ -6,4 +6,4 @@
 
 [Get Started](#notes)
 [GitHub](https://github.com/AnnNaserNabil)
-![](/docs/_media/bg.png)
+![](/docs/_media/background.png)
