@@ -39,6 +39,7 @@
     }
 
     /* Force Transparency on all Docsify layers */
+    html,
     body,
     #app,
     .sidebar,
@@ -46,6 +47,13 @@
     .app-nav,
     .markdown-section {
       background: transparent !important;
+    }
+
+    /* Override docsify-darklight-theme background variables */
+    :root {
+      --docsify_darklight_theme_backend_light: transparent !important;
+      --docsify_darklight_theme_backend_dark: transparent !important;
+      --background: transparent !important;
     }
 
     /* Aggressive Cover Page Transparency */
@@ -199,6 +207,7 @@
 </head>
 
 <body>
+  <div id="bg-container"></div>
   <div id="app">Please wait...</div>
   <script>
     window.$docsify = {
