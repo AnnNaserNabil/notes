@@ -44,9 +44,17 @@
     .sidebar,
     .content,
     .app-nav,
-    section.cover,
     .markdown-section {
       background: transparent !important;
+    }
+
+    /* Aggressive Cover Page Transparency */
+    section.cover,
+    section.cover.active,
+    body section.cover,
+    body section.cover.active {
+      background: transparent !important;
+      background-image: none !important;
     }
 
     /* Sidebar Styling */
@@ -79,12 +87,6 @@
       color: #f1f5f9 !important;
     }
 
-    /* Kill any default cover gradients */
-    body section.cover {
-      background-image: none !important;
-      background: transparent !important;
-    }
-
     /* Premium Cover Page Styling */
     section.cover {
       position: relative;
@@ -93,6 +95,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      min-height: 100vh;
     }
 
     section.cover::before {
@@ -118,25 +121,34 @@
     section.cover h1 {
       color: #38bdf8 !important;
       font-weight: 900;
-      font-size: 4rem !important;
+      font-size: 4.5rem !important;
       letter-spacing: -0.05em;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    section.cover h2 {
+      color: #94a3b8 !important;
+      font-size: 1.5rem !important;
+      font-weight: 500;
+      margin-bottom: 2rem;
     }
 
     section.cover blockquote {
-      color: #94a3b8 !important;
-      font-size: 1.5rem;
+      color: #cbd5e1 !important;
+      font-size: 1.75rem;
       border: none !important;
+      margin-bottom: 2.5rem;
     }
 
     /* Premium Buttons */
     section.cover a {
       border-radius: 3rem !important;
-      padding: 1rem 2.5rem !important;
+      padding: 1.25rem 3rem !important;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
       font-weight: 700 !important;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.1em;
+      font-size: 0.9rem !important;
     }
 
     section.cover a[href="#notes"],
@@ -144,25 +156,25 @@
       background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%) !important;
       color: #0f172a !important;
       border: none !important;
-      box-shadow: 0 4px 14px 0 rgba(56, 189, 248, 0.39);
+      box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.4);
     }
 
     section.cover a[href="#notes"]:hover,
     section.cover a[href="#নোটস"]:hover {
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 20px 25px -5px rgba(56, 189, 248, 0.5);
     }
 
     section.cover a:not([href="#notes"]):not([href="#নোটস"]) {
-      border: 2px solid rgba(56, 189, 248, 0.5) !important;
+      border: 2px solid rgba(56, 189, 248, 0.6) !important;
       color: #38bdf8 !important;
       background: rgba(56, 189, 248, 0.05) !important;
     }
 
     section.cover a:not([href="#notes"]):not([href="#নোটস"]):hover {
-      background: rgba(56, 189, 248, 0.15) !important;
+      background: rgba(56, 189, 248, 0.2) !important;
       border-color: #38bdf8 !important;
-      transform: translateY(-3px);
+      transform: translateY(-5px);
     }
 
     /* Custom scrollbar */
