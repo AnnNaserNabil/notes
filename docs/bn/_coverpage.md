@@ -10,4 +10,4 @@
 [শুরু করুন](#নোটস)
 [GitHub](https://github.com/)
 
-![](_media/background.png)
+![](/_media/background.png)
