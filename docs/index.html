@@ -11,26 +11,58 @@
     title="docsify-darklight-theme" type="text/css" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
   <style>
-    /* Premium CSS Background for Cover Page */
-    section.cover {
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-      position: relative;
-      overflow: hidden;
-      color: #f8fafc !important;
-      /* Force light text */
+    /* Global Background and Overlay */
+    body {
+      background-image: url('_media/background.png');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #f8fafc;
     }
 
-    /* Dark Overlay for better contrast */
-    section.cover::after {
+    body::after {
       content: '';
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(15, 23, 42, 0.6);
-      /* Dark semi-transparent overlay */
-      z-index: 0;
+      background: rgba(15, 23, 42, 0.75);
+      /* Global dark overlay */
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* Docsify Layout Transparency */
+    .sidebar,
+    .content,
+    .app-nav,
+    section.cover {
+      background: transparent !important;
+    }
+
+    .sidebar {
+      border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+      backdrop-filter: blur(10px);
+      background: rgba(15, 23, 42, 0.4) !important;
+    }
+
+    .markdown-section {
+      background: rgba(30, 41, 59, 0.4) !important;
+      backdrop-filter: blur(8px);
+      border-radius: 1rem;
+      padding: 2rem !important;
+      margin: 2rem auto !important;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Premium CSS Background for Cover Page */
+    section.cover {
+      position: relative;
+      overflow: hidden;
+      color: #f8fafc !important;
     }
 
     section.cover::before {
@@ -51,12 +83,10 @@
       z-index: 2;
       position: relative;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      /* Text shadow for readability */
     }
 
     section.cover h1 {
       color: #38bdf8 !important;
-      /* Vibrant primary color */
       font-weight: 800;
       letter-spacing: -0.025em;
     }
