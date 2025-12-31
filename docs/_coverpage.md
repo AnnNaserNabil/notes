@@ -10,5 +10,3 @@
 
 [Get Started](#notes)
 [GitHub](https://github.com/AnnNaserNabil)
-
-![](docs/_media/background.png)

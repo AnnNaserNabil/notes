@@ -8,6 +8,4 @@
 - **এআই এবং মেশিন লার্নিং** (AI & Machine Learning)
 
 [শুরু করুন](#নোটস)
-[GitHub](https://github.com/)
-
-![](/_media/background.png)
+[GitHub](https://github.com/AnnNaserNabil)
